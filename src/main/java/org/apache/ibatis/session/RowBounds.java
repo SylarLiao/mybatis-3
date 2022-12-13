@@ -17,6 +17,7 @@ package org.apache.ibatis.session;
 
 /**
  * @author Clinton Begin
+ * mybatis分页方式：1、RowBounds分页对象；2、sql语句进行分页；3、分页插件
  */
 public class RowBounds {
 

@@ -33,6 +33,7 @@ import org.apache.ibatis.transaction.Transaction;
 
 /**
  * @author Clinton Begin
+ * 每一次执行update或select，都新建一个statement对象，用完立刻关闭
  */
 public class SimpleExecutor extends BaseExecutor {
 

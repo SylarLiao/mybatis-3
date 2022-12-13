@@ -37,6 +37,9 @@ import org.apache.ibatis.transaction.Transaction;
 
 /**
  * @author Jeff Butler
+ * 执行update操作，不支持select（jdbc批处理不支持select），将所有的sql添加到批处理中，
+ * 等待统一执行，缓存了多个statement对象，每个statement对象都是addBatch完毕后，等待逐一执行
+ * executeBatch批处理
  */
 public class BatchExecutor extends BaseExecutor {
 
